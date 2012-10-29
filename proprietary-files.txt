@@ -140,6 +140,7 @@ lib/tee/smcl_ta_8500bx_secure_test.ssw
 lib/tee/suntory_core_ta.ssw
 lib/hw/camera.montblanc.so
 lib/hw/gralloc.montblanc.so
+lib/hw/nfc.montblanc.so
 lib/hw/gps.montblanc.so
 lib/hw/sensors.default.so
 lib/hw/copybit.montblanc.so
