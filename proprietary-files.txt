@@ -257,8 +257,7 @@ vendor/camera/APT00YP1.dat
 vendor/camera/STW05BN0.dat
 vendor/camera/KMO05BN0.dat
 vendor/camera/flash.dat
-vendor/firmware/libpn544_fw_c2.so
-vendor/firmware/libpn544_fw_c3.so
+vendor/firmware/libpn544_fw.so
 usr/lib/alsa-lib/libasound_module_pcm_bluetooth.so
 usr/lib/alsa-lib/libasound_module_ctl_bluetooth.so
 usr/lib/alsa-lib/libasound_module_pcm_steiop.so

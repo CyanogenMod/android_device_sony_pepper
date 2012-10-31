@@ -87,6 +87,15 @@ PRODUCT_PACKAGES += \
     Nfc \
     Tag
 
+# NFCEE access control
+ifeq ($(TARGET_BUILD_VARIANT),user)
+    NFCEE_ACCESS_PATH := device/sony/montblanc-common/config/nfcee_access.xml
+else
+    NFCEE_ACCESS_PATH := device/sony/montblanc-common/config/nfcee_access_debug.xml
+endif
+PRODUCT_COPY_FILES += \
+    $(NFCEE_ACCESS_PATH):system/etc/nfcee_access.xml
+
 $(call inherit-product, frameworks/base/build/phone-hdpi-512-dalvik-heap.mk)
 
 $(call inherit-product-if-exists, vendor/sony/pepper/pepper-vendor.mk)
