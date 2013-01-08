@@ -27,7 +27,7 @@ $(call inherit-product, device/common/gps/gps_eu_supl.mk)
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
-    frameworks/base/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
+    frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
 
 # This device is hdpi.  However the platform doesn't
 # currently contain all of the bitmaps at hdpi density so
@@ -96,7 +96,7 @@ endif
 PRODUCT_COPY_FILES += \
     $(NFCEE_ACCESS_PATH):system/etc/nfcee_access.xml
 
-$(call inherit-product, frameworks/base/build/phone-hdpi-512-dalvik-heap.mk)
+$(call inherit-product, frameworks/native/build/phone-hdpi-512-dalvik-heap.mk)
 
 $(call inherit-product-if-exists, vendor/sony/pepper/pepper-vendor.mk)
 
